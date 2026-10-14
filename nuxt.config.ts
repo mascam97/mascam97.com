@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/color-mode',
-    '@nuxtjs/tailwindcss',
     '@nuxt/ui',
     '@nuxt/icon/module',
   ],
