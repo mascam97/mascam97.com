@@ -34,7 +34,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    role: 'Senior Software Engineer (past experience)',
+    role: 'Senior Software Engineer (current experience)',
     name: 'Placetopay',
     description:
       'Online payment solutions for Latin America, supporting many payment methods and recurring payments. Built backend services in PHP (Laravel), focused on high performance and reliability.',
