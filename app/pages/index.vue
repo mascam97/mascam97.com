@@ -73,7 +73,7 @@ useHead({
           { label: 'View GitHub', to: 'https://github.com/mascam97', target: '_blank', icon: 'i-simple-icons-github', color: 'neutral', variant: 'subtle', size: 'xl' },
         ]"
       >
-        <div class="flex justify-center lg:justify-start">
+        <div class="flex justify-center lg:justify-end">
           <UAvatar
             src="/photo.jpg"
             alt="Mart\u00edn Campos"
