@@ -13,7 +13,7 @@ import {
 } from '~/data/portfolio'
 
 const pageTitle = `${fullName} \u2014 Software Engineer (PHP/Laravel, AWS)`
-const ogImage = `${siteUrl}/photo.jpg`
+const ogImage = `${siteUrl}/og.png`
 
 useSeoMeta({
   title: pageTitle,
@@ -25,8 +25,8 @@ useSeoMeta({
   ogType: 'profile',
   ogLocale: 'en_US',
   ogImage,
-  ogImageWidth: 797,
-  ogImageHeight: 862,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
   twitterCard: 'summary_large_image',
   twitterTitle: pageTitle,
   twitterDescription: siteDescription,
@@ -44,7 +44,7 @@ useHead({
         name: fullName,
         alternateName: handle,
         url: siteUrl,
-        image: ogImage,
+        image: `${siteUrl}/photo.jpg`,
         jobTitle,
         description: siteDescription,
         sameAs: [socialLinks[0].href, socialLinks[1].href],

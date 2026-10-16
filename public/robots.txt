@@ -1,5 +1,6 @@
 User-agent: *
 
 Allow: /
+Disallow: /og-image
 
 Sitemap: https://mascam97.com/sitemap.xml
