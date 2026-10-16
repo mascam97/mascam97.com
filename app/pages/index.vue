@@ -65,7 +65,6 @@ useHead({
         title="Mart&iacute;n Campos"
         description="Software Engineer (PHP/Laravel) building high-volume Fintech systems on AWS Cloud. I design resilient, scalable APIs and keep critical payment platforms running."
         orientation="horizontal"
-        reverse
         :links="[
           { label: 'Let\'s talk', to: mailtoLink, icon: 'i-lucide-mail', size: 'xl' },
           { label: 'View GitHub', to: 'https://github.com/mascam97', target: '_blank', icon: 'i-simple-icons-github', color: 'neutral', variant: 'subtle', size: 'xl' },
