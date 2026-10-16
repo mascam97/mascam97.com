@@ -65,21 +65,20 @@ useHead({
         title="Mart&iacute;n Campos"
         description="Software Engineer (PHP/Laravel) building high-volume Fintech systems on AWS Cloud. I design resilient, scalable APIs and keep critical payment platforms running."
         orientation="horizontal"
+        :ui="{
+          container: 'py-16 sm:py-20 lg:py-24 gap-10 lg:gap-12',
+        }"
         :links="[
           { label: 'Let\'s talk', to: mailtoLink, icon: 'i-lucide-mail', size: 'xl' },
           { label: 'View GitHub', to: 'https://github.com/mascam97', target: '_blank', icon: 'i-simple-icons-github', color: 'neutral', variant: 'subtle', size: 'xl' },
         ]"
       >
-        <template #headline>
-          <span>Open to work &middot; Remote &middot; Mexico</span>
-        </template>
-
-        <div class="flex justify-center">
+        <div class="flex justify-center lg:justify-start">
           <UAvatar
             src="/photo.jpg"
             alt="Mart\u00edn Campos"
             size="3xl"
-            class="size-56 ring-4 ring-primary/20 sm:size-72"
+            class="size-64 ring-4 ring-primary/20 sm:size-80 lg:size-96"
           />
         </div>
       </UPageHero>
