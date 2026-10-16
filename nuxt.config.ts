@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     '@nuxt/icon/module',
   ],
   css: ['~/assets/css/main.css'],
+  app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      meta: [{ name: 'theme-color', content: '#dc2626' }],
+    },
+  },
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
 })

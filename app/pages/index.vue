@@ -5,17 +5,52 @@ import {
   certifications,
   socialLinks,
   mailtoLink,
+  siteUrl,
+  handle,
+  fullName,
+  jobTitle,
+  siteDescription,
 } from '~/data/portfolio'
 
+const pageTitle = `${fullName} \u2014 Software Engineer (PHP/Laravel, AWS)`
+const ogImage = `${siteUrl}/photo.jpg`
+
 useSeoMeta({
-  title: 'Mart\u00edn Campos \u2014 Software Engineer (PHP/Laravel, AWS)',
-  description:
-    'Software Engineer specialized in high-volume Fintech systems. PHP/Laravel, AWS Cloud, and scalable API architecture. Open to new opportunities.',
-  ogTitle: 'Mart\u00edn Campos \u2014 Software Engineer (PHP/Laravel, AWS)',
-  ogDescription:
-    'Software Engineer specialized in high-volume Fintech systems. PHP/Laravel, AWS Cloud, and scalable API architecture.',
-  ogImage: '/photo.jpg',
+  title: pageTitle,
+  description: siteDescription,
+  ogTitle: pageTitle,
+  ogDescription: siteDescription,
+  ogUrl: siteUrl,
+  ogSiteName: `${fullName} \u2014 ${handle}`,
+  ogType: 'profile',
+  ogLocale: 'en_US',
+  ogImage,
+  ogImageWidth: 797,
+  ogImageHeight: 862,
   twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: siteDescription,
+  twitterImage: ogImage,
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: siteUrl }],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: fullName,
+        alternateName: handle,
+        url: siteUrl,
+        image: ogImage,
+        jobTitle,
+        description: siteDescription,
+        sameAs: [socialLinks[0].href, socialLinks[1].href],
+      }),
+    },
+  ],
 })
 </script>
 
@@ -36,6 +71,10 @@ useSeoMeta({
           { label: 'View GitHub', to: 'https://github.com/mascam97', target: '_blank', icon: 'i-simple-icons-github', color: 'neutral', variant: 'subtle', size: 'xl' },
         ]"
       >
+        <template #headline>
+          <span>Open to work &middot; Remote &middot; Mexico</span>
+        </template>
+
         <div class="flex justify-center">
           <UAvatar
             src="/photo.jpg"

@@ -128,3 +128,10 @@ export const socialLinks: SocialLink[] = [
 
 export const contactEmail = 'mascam97@gmail.com'
 export const mailtoLink = `mailto:${contactEmail}`
+
+export const siteUrl = 'https://mascam97.com'
+export const handle = 'mascam97'
+export const fullName = 'Martín Campos'
+export const jobTitle = 'Software Engineer'
+export const siteDescription =
+  'Software Engineer specialized in high-volume Fintech systems. PHP/Laravel, AWS Cloud, and scalable API architecture. Open to new opportunities.'
