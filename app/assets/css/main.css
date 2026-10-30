@@ -1,2 +1,61 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  --ui-primary: var(--ui-color-primary-600);
+  --ui-text-muted: var(--ui-color-neutral-600);
+}
+
+.dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-text-muted: var(--ui-color-neutral-400);
+}
+
+body {
+  font-feature-settings: 'cv11', 'ss03';
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+#contact {
+  scroll-margin-top: 4.5rem;
+}
+
+.hero-glow {
+  background:
+    radial-gradient(55% 60% at 80% 0%, color-mix(in oklab, var(--ui-primary) 18%, transparent), transparent 70%),
+    radial-gradient(40% 40% at 0% 100%, color-mix(in oklab, var(--ui-primary) 8%, transparent), transparent 70%);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.6s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
+  }
+}
