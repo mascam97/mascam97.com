@@ -169,12 +169,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    role: 'Software Engineer · 2021 – Present',
-    name: 'PlacetoPay',
+    role: 'Open-source contributor',
+    name: 'PlacetoPay Docs',
     description:
-      'Online payment solutions for Latin America, supporting many payment methods and recurring payments. Backend services in PHP (Laravel) focused on high performance and reliability.',
-    link: 'https://placetopay.dev/en',
-    tags: ['PHP', 'Laravel', 'AWS', 'Payments'],
+      'Public API documentation for a payments platform serving Latin America. Contributed endpoint documentation, request examples, changelogs and tooling fixes through 30+ merged pull requests.',
+    link: 'https://github.com/placetopay-org/placetopay-docs',
+    tags: ['API docs', 'MDX', 'Open source', 'Payments'],
   },
   {
     role: 'PHP Backend Developer',
@@ -185,36 +185,12 @@ export const projects: Project[] = [
     tags: ['Laravel', 'Redis', 'GraphQL', 'PHPStan', '95% coverage'],
   },
   {
-    role: 'PHP Full Stack Developer',
-    name: 'Laravel Livewire Publications',
+    role: 'Full Stack Developer',
+    name: 'This portfolio',
     description:
-      'Technical interview project using Laravel Jetstream, Livewire, and TailwindCSS. Focused on dynamic components, state patterns, and queue-based notifications, with extensive PHPUnit testing.',
-    link: 'https://github.com/mascam97/laravel-livewire-publications',
-    tags: ['Livewire', 'Jetstream', 'Tailwind', 'PHPUnit'],
-  },
-  {
-    role: 'PHP Backend Developer',
-    name: 'Symfony Job Board',
-    description:
-      'Job board where companies post offers and candidates apply, built with Symfony and Docker as a framework-agnostic PHP exercise beyond Laravel.',
-    link: 'https://github.com/mascam97/symfony-job-board',
-    tags: ['Symfony', 'Docker', 'PHP'],
-  },
-  {
-    role: 'Developer Tooling',
-    name: 'dev-forge',
-    description:
-      'Development toolkit with fail-fast project automation, advanced Git workflows, and high-performance Bash utilities.',
-    link: 'https://github.com/mascam97/dev-forge',
-    tags: ['Bash', 'Git', 'Automation'],
-  },
-  {
-    role: 'JavaScript Backend Developer',
-    name: 'NestJS API Store',
-    description:
-      'NestJS and TypeScript project focused on API design, JWT authentication, MongoDB, Swagger documentation, and e2e testing with PactumJS.',
-    link: 'https://github.com/mascam97/nestjs-api-store',
-    tags: ['NestJS', 'TypeScript', 'MongoDB', 'JWT'],
+      'The source of this site: Nuxt 4, Nuxt UI and Tailwind CSS, with SEO metadata, structured data and a responsive light and dark design.',
+    link: 'https://github.com/mascam97/mascam97.com',
+    tags: ['Nuxt 4', 'Vue', 'Tailwind CSS', 'SEO'],
   },
 ]
 

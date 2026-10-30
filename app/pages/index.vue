@@ -256,7 +256,7 @@ useHead({
         id="projects"
         headline="Selected work"
         title="Featured projects"
-        description="Backend and full stack engineering, from production Fintech systems to personal projects built with automated tests and documentation."
+        description="Open-source contributions and personal projects, built with automated tests and documentation."
       >
         <UPageGrid>
           <UPageCard
